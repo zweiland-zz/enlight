@@ -5,6 +5,7 @@ function getColor() {
 function setBackground() {
   var bgColor = getColor();
   document.body.style.background = bgColor;
+  document.getElementById('bgColorText').innerText = bgColor;
 }
 
 document.body.onkeyup=function(e){
@@ -15,4 +16,4 @@ document.body.onkeyup=function(e){
   }
 };
 
-document.write("<div><p>" + getColor() + "</p></div>");
+document.write("<div><p id='bgColorText'></p></div>");
